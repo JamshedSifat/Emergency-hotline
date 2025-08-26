@@ -27,8 +27,11 @@ for(const callButton of callButtons){
 
             let currentCoins =Number(coinCount.innerText) -20 ;
         coinCount.innerText = currentCoins;
-        console.log(currentCoins);
-
+       if(currentCoins < 0){
+        coinCount.innerText = 0;
+        return;
+       }
+     
 
 
         /* call History */
@@ -60,4 +63,5 @@ document.getElementById("clear-btn").addEventListener("click", function(){
 
 
 
-   
+   //baki ase call history te name soho sobgula ashe na
+   //coin - porjonto chole jay
