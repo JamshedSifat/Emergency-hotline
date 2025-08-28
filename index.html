@@ -13,59 +13,56 @@
   
 </head>
 <body class="bg-[#F5FFF6]">
-    <header>
-        <div class="navbar bg-base-100 shadow-sm">
-  <div class="flex-1">
-<div class="flex ">
-    <img class="w-[50px] h-[50px] " src="./assets/logo.png" alt=""> 
-<h1 class="ml-[10px] font-bold text-[#006747]">Emergency <br>Service</h1>
-</div>
-</div>
-  <div class="flex gap-5">
-    <div class="flex gap-2 bg-[#41ff6b1a] py-3 px-5 rounded-[50px]">
-        <h1 id="heart-count">0</h1>
-        <img class="w-[30px] h-[30px]" src="./assets/heart.png" alt="">
+   <header>
+  <div class="navbar bg-base-100 shadow-sm flex justify-between items-center px-3 md:px-6 py-2">
+  <!-- Left logo -->
+  <div class="flex items-center">
+    <img class="w-[30px] h-[30px] md:w-[50px] md:h-[50px]" src="./assets/logo.png" alt="Logo">
+    <h1 class="ml-2 text-sm md:text-base lg:text-lg font-bold text-[#006747] leading-tight">
+      Emergency <br class="hidden md:block"> Service
+    </h1>
+  </div>
+
+  <!-- Right side -->
+  <div class="flex gap-2 md:gap-5">
+    <div class="flex items-center gap-1 md:gap-2 bg-[#41ff6b1a] py-1 md:py-2 px-2 md:px-4 rounded-full text-xs md:text-sm">
+      <h1 id="heart-count">0</h1>
+      <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/heart.png" alt="Heart">
     </div>
-    <div class="flex gap-2 bg-[#41ff6b1a] py-3 px-5 rounded-[50px]">
-        <h1 class="coin-count">100</h1>
-        <img class="w-[30px] h-[30px]" src="./assets/coin.png" alt="">
+
+    <div class="flex items-center gap-1 md:gap-2 bg-[#41ff6b1a] py-1 md:py-2 px-2 md:px-4 rounded-full text-xs md:text-sm">
+      <h1 class="coin-count">100</h1>
+      <img class="w-[18px] h-[18px] md:w-[25px] md:h-[25px]" src="./assets/coin.png" alt="Coin">
     </div>
-    <div class="flex gap-2 bg-[#00A63E] py-3 px-9 rounded-[50px]">
-        <h1 class="text-white"><span>0</span> Copy</h1>
-        
+
+    <div class="flex items-center gap-1 md:gap-2 bg-[#00A63E] py-1 md:py-2 px-3 md:px-5 rounded-full text-white text-xs md:text-sm">
+      <h1><span>0</span> Copy</h1>
     </div>
-    <!-- <ul class="menu menu-horizontal px-1">
-      <li><a>Link</a></li>
-      <li>
-        <details>
-          <summary>Parent</summary>
-          <ul class="bg-base-100 rounded-t-none p-2">
-            <li><a>Link 1</a></li>
-            <li><a>Link 2</a></li>
-          </ul>
-        </details>
-      </li>
-    </ul> -->
   </div>
 </div>
 
-<!-- Emergency heading -->
- <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-[21px]">
+
+  <!-- Emergency heading -->
+  <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] py-6 px-4">
     <div class="flex justify-center items-center">
-        <img class="w-[92px] h-[92px]" src="./assets/logo-dark.png" alt="">
+      <img class="w-[70px] h-[70px] md:w-[92px] md:h-[92px]" src="./assets/logo-dark.png" alt="">
     </div>
     <div class="heading-text text-white text-center">
-        <h1 class="text-[40px] font-bold">Emergency Service Directory</h1>
-        <p class="text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+      <h1 class="text-2xl md:text-4xl font-bold">Emergency Service Directory</h1>
+      <p class="text-sm md:text-lg">
+        Government Emergency Services at Your Fingertip – A Project by 
+        Government of the People’s Republic of Bangladesh
+      </p>
     </div>
-</div>
-    </header>
+  </div>
+</header>
+
 
     <main>
-        <section class="w-11/12 mx-auto grid grid-cols-12 gap-5 py-[50px]">
+        <section class="md:w-11/12 mx-auto grid grid-cols-12 gap-5 py-[50px]">
 
   <!-- Left side: 3 cards (col-span-6) -->
-  <div class="col-span-9 grid grid-cols-3 gap-5">
+  <div class="md:col-span-9 md:grid md:grid-cols-3 col-span-7 grid grid-cols-1 gap-5">
     
     <!-- Card 1 -->
     <div class="bg-white shadow-sm p-[32px] rounded-md shadow-md">
@@ -86,8 +83,9 @@
         <button class="call-btn btn w-6/12 bg-[#00A63E] rounded-lg text-white"><i class="fa-solid fa-phone"></i> Call</button>
       </div>
     </div>
-    <!-- Card 1 -->
-    <div class="bg-white shadow-sm p-[32px] rounded-md shadow-md">
+    
+    <!-- Card 2 -->
+      <div class="bg-white shadow-sm p-[32px] rounded-md shadow-md">
       <div class="flex justify-between items-center pb-2">
         <div class="bg-[#DFEFFF] w-[60px] h-[60px] flex justify-center items-center rounded-[16px]">
           <img class="w-[32px] h-[32px]" src="./assets/police.png" alt="">
@@ -238,14 +236,15 @@
         <button class="call-btn btn w-6/12 bg-[#00A63E] rounded-lg text-white"><i class="fa-solid fa-phone"></i> Call</button>
       </div>
     </div>
+   
 
 
   </div>
 
   <!-- Right side: Aside (col-span-3) -->
-  <aside class="col-span-3 bg-white p-6 rounded-md shadow-md">
-  <div class="flex justify-between">
-    <h1 ><i class="fa-regular fa-clock"></i> <span class="text-lg font-serif">Call History</span></h1>
+  <aside class="md:col-span-3  col-span-5 bg-white md:p-6 p-4 rounded-md shadow-md">
+  <div class="sm:flex justify-between">
+    <h1 ><i class="fa-regular fa-clock"></i> <span class="md:text-lg font-serif">Call History</span></h1>
 
      <button id="clear-btn" class="btn  bg-[#00A63E] rounded-full text-white"> clear</button>
   </div>
@@ -263,3 +262,4 @@
     <script src="./js/script.js"></script>
 </body>
 </html>
+
